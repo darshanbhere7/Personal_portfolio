@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header Section -->
+        <header>
+            <div class="container">
+                <h1>Hello, I'm <span>DARSHAN BHERE</span></h1>
+                <p>Software Developer | MCA Student</p>
+                <a href="#about" class="btn">Know More</a>
+            </div>
+        </header>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <div class="about-content">
+                <img src="me.jpg" alt="Your Photo" class="profile-pic">
+                <div class="about-text">
+                    <h2>ABOUT ME</h2>
+                    <p>
+                        I'm a final year MCA student passionate about software development, especially in the areas of Java, web development, and data structures. My goal is to land a high-paying job in the tech industry while constantly improving my coding skills.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>SKILLS</h2>
+            <div class="skills-list">
+                <div class="skill">Java</div>
+                <div class="skill">HTML & CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Data Structures</div>
+                <div class="skill">Algorithms</div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>EDUCATION</h2>
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td>10th Grade</td>
+                    <td>Maharashtra Board</td>
+                    <td>2019</td>
+                    <td>89.60%</td>
+                </tr>
+                <tr>
+                    <td>12th Grade</td>
+                    <td>Maharashtra Board</td>
+                    <td>2021</td>
+                    <td>91.50%</td>
+                </tr>
+                <tr>
+                    <td>BSc in Computer Science</td>
+                    <td>Mumbai University</td>
+                    <td>2024</td>
+                    <td>9.61/10</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>MY PROJECTS</h2>
+            <div class="project-card">
+                <h3>Employee Management System</h3>
+                <p>A system to manage employee records, attendance, and payroll using Java and MySQL.</p>
+            </div>
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+                <p>A creative and responsive personal website built using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <h3>SuperStore Sales Dashboard</h3>
+                <p>Developed an interactive Power BI dashboard to analyze superstore sales data.</p>
+            </div>
+        </section>
+
+        
+
+        <!-- Things I Remember Section -->
+        <section id="remember">
+            <h2>THINGS I REMEMBER</h2>
+            <ul class="remember-list">
+                <li>Learn coding daily</li>
+                <li>Practice data structures and algorithms</li>
+                <li>Contribute to open source projects</li>
+                <li>Network with industry professionals</li>
+                <li>Attend tech meetups and workshops</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>CONTACT ME</h2>
+            <div class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </div>
+            <p>Email: darshanbhere2@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/darshan-bhere-b69a14260/">My LinkedIn</a></p>
+            <p>Github: <a href="https://github.com/darshanbhere7">My Github</a></p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Darshan Bhere. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript for Smooth Scroll -->
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

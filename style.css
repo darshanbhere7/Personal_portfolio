@@ -1,0 +1,282 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff; /* White text for better contrast against background */
+    background-image: url('bgimage.jpg'); /* Full-page Background Image */
+    background-size: cover;
+    background-attachment: fixed; /* Background stays fixed when scrolling */
+    background-position: center;
+    height: 100%;
+}
+
+.main-content {
+    width: 100%;
+    padding: 20px 0; /* Reduced the padding for less gap between sections */
+    text-align: center;
+}
+
+/* Header Section */
+header {
+    padding: 80px 0; /* Reduced the header padding */
+}
+
+header h1 {
+    font-size: 48px;
+    color: white;
+}
+
+header h1 span {
+    color: #3498db;
+}
+
+header p {
+    font-size: 24px;
+}
+
+header .btn {
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+header .btn:hover {
+    background: #2980b9;
+}
+
+/* About Section */
+#about {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center; /* Center text */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 15px; /* Space between heading and paragraph */
+}
+
+/* Skills Section */
+#skills {
+    padding: 40px 0; /* Reduced padding for Skills section */
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px 0; /* Reduced padding for Projects section */
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.2); /* Transparent background for project cards */
+    padding: 20px;
+    margin: 20px auto; /* Added auto margin to center the project cards */
+    border-radius: 10px;
+    max-width: 600px; /* Ensuring project cards have a uniform max width */
+    text-align: center;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Education Section */
+#education {
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 20px auto; /* Center the education section */
+    max-width: 800px; /* Limit the width */
+    overflow-x: auto; /* Allow horizontal scrolling if content overflows */
+}
+
+#education table {
+    width: 100%;
+    max-width: 100%; /* Ensure the table does not exceed the parent width */
+    border-collapse: collapse;
+}
+
+#education th, #education td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    word-wrap: break-word; /* Prevent long words from overflowing */
+}
+
+#education th {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Add this for responsive design */
+@media (max-width: 768px) {
+    #education {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+
+    #education table {
+        font-size: 14px; /* Adjust font size for readability */
+    }
+}
+
+/* Things I Remember Section */
+#remember {
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 20px auto; /* Center the remember section */
+    max-width: 800px; /* Limit the width */
+}
+
+.remember-list {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+}
+
+.remember-list li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin: 10px 0; /* Space between list items */
+    border-radius: 5px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 10px; /* Added border radius for a softer look */
+    max-width: 800px; /* Limit the width of the contact section */
+    margin: 20px auto; /* Center the contact section */
+}
+
+.contact-form {
+    max-width: 600px; /* Limit form width */
+    margin: 0 auto; /* Center the form */
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .contact-form button {
+        font-size: 16px; /* Adjust font size for buttons on smaller screens */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px; /* Adjust font size for inputs and text areas */
+    }
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    .project-card {
+        max-width: 90%; /* Full width on smaller screens */
+    }
+
+    #education, #remember {
+        max-width: 90%; /* Full width on smaller screens */
+    }
+}
